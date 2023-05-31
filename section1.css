@@ -1,0 +1,269 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --txt1: #151515;
+    --txt2: #202020;
+    --txt3: #333;
+    --txt5: #555;
+    --txt6: #666;
+    --txt7: #767676;
+    --txt9: #999;
+    --txta: #acacac;
+    --txtb: #bbb;
+    --txtc: #c0c7d2;
+    --txtd: #ddd;
+    --txte: #e5eaec;
+    --txtf: #f4f5f6;
+    --red: #d80000;
+    --ui1: #f13131;
+    --ui2: #3636a8;
+    --ui3: #1877f2;
+    --gray1: #e5e5e8;
+    --gray2: #616d84;
+    --gray3: #353540;
+    --gray1_txt: #151515;
+    --gray2_txt: #fff;
+    --gray3_txt: #fff;
+    --gray1_ov: #1b2539;
+    --gray2_ov: #e7f0f6;
+    --gray3_ov: var(--color1);
+    --gray1_ov_txt: #fff;
+    --gray2_ov_txt: #151515;
+    --gray3_ov_txt: #fff;
+    --border: #ced6dc;
+    --facebook: #1648ad;
+    --twitter: #1da1f2;
+    --naver: #179911;
+    --kakaotalk: #fae301;
+    --insta: #e94aaf;
+    --youtube: #e52c26;
+    --container: 1440px;
+    --wide: 1840px;
+    --eng: "Nunito Sans";
+    --num: "Nunito Sans";
+    --font: "Noto Serif KR";
+    --icon: "remixicon";
+    --headerHeight: 10rem;
+    --mobileHeadH: 10rem;
+    --tServiceHeight: 0;
+    --color1: #1198bb;
+    --color2: #e34891;
+    --color3: #ffd500;
+    --color4: #f77e0b;
+    /* --scolor1 : #EFCBA6; 
+    --scolor2 : #EFCBA6; 
+    --scolor3 : #CFD1F2; */
+    --btn1: #616d84;
+    --btn2: #1b2539;
+    --btn1_txt: #fff;
+    --btn2_txt: #fff;
+    --btn1_ov: #e7f0f6;
+    --btn2_ov: #17809b;
+    --btn1_ov_txt: #333333;
+    --btn2_ov_txt: #fff;
+    --gnbColor0: rgb(100, 80, 61);
+    --gnbColor1: rgb(123, 100, 114);
+    --gnbColor2: rgb(36, 147, 40);
+    --gnbColor3: rgb(117, 67, 142);
+    --gnbColor4: rgb(99, 104, 210);
+    --gnbColor5: rgb(185, 125, 44);
+    --gnbColor6: rgb(48, 113, 197);
+    --gnbColor7: rgb(222, 76, 149);
+    --side_util_txt: #fff;
+    --side_util_bg: #202c40;
+    --category0: #0d91b4;
+    --category1: #1466b8;
+    --category2: #e8730c;
+    --category3: #2fa867;
+    --category4: #ba59cc;
+    --category5: #d9267b;
+    --category6: #20a55e;
+    --category7: #f35850;
+    --category8: #6068cd;
+    --progressW: 50%;
+}
+
+.section1 .line,
+.section4 .line {
+    background: var(--txte);
+}
+
+.section1 .bg_wave {
+    width: 83rem;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.section1 .bg_wave::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20.4rem;
+    background: url("https://munjang.or.kr/main/img/main/section2_typo.png") 0 0
+        repeat;
+    animation: marquee 12s linear infinite;
+}
+.section1 .container {
+    align-items: center;
+    height: 95.2rem;
+    padding: 14rem 11rem 28rem 15.1rem;
+    display: flex;
+    z-index: 1;
+}
+.section1 .txt {
+    flex: 0 0 42.3%;
+    padding-bottom: 7.6rem;
+    position: relative;
+}
+.section1 .txt h2 {
+    font-size: 7rem;
+    margin-bottom: 4.5rem;
+}
+.section1 .txt p {
+    color: var(--txt7);
+    max-width: 50rem;
+    line-height: 1.68;
+}
+.section1 .txt .more {
+    position: static;
+    color: var(--txt2);
+    margin-top: 10.4rem;
+    font-weight: 500;
+}
+.section1 .item_list {
+    flex: 1;
+    min-width: 1px;
+}
+.section1 .item_list .slick-list {
+    padding: 13rem 0;
+}
+.section1 .item_list .item {
+    display: block;
+    margin: 0 5rem;
+    text-align: center;
+}
+.section1 .item_list .item .card {
+    display: inline-block;
+    position: relative;
+    border-radius: 2.8rem;
+    overflow: hidden;
+    color: #fff;
+    box-shadow: 0 1rem 1.6rem rgba(127, 127, 127, 0.3);
+    transition: 0.2s;
+}
+.section1 .item_list .item .card:hover,
+.section1 .item_list .item .card:focus {
+    box-shadow: 1rem 2rem 2.2rem rgba(127, 127, 127, 0.3);
+}
+.section1 .item_list .item .card .category {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 4rem;
+    z-index: 2;
+    width: -moz-max-content;
+    width: max-content;
+}
+.section1 .item_list .item .card .title {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 8rem;
+    z-index: 2;
+    font-size: 2.4rem;
+    font-weight: 500;
+    width: 100%;
+    padding: 0 3rem;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.section1 .item_list .item .card::before {
+    content: "";
+    display: block;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: inherit;
+}
+.section1 .item_list .item .card .date {
+    display: none;
+}
+.section1 .item_list .item.slick-current .card {
+    transform: translateY(9rem);
+}
+.section1 .item_list .item.slick-current + .slick-active .card {
+    transform: translateY(-5.6rem);
+}
+.section1 .item_list.slick-slider {
+    position: static;
+}
+.section1 .slick-controls {
+    position: absolute;
+    bottom: 26.6rem;
+}
+.section1 .slick-controls .slick-arrow {
+    left: inherit;
+    right: inherit;
+    top: inherit;
+    transform: none;
+    cursor: pointer;
+}
+.section1 .slick-controls .slick-prev {
+    right: 16rem;
+}
+.section1 .slick-controls .slick-next {
+    right: 4rem;
+}
+.section1 .slick-controls .slick-progress {
+    width: 36rem;
+    height: 1px;
+    background: var(--txtc);
+}
+.section1 .slick-controls .slick-progress .progress {
+    width: 0%;
+    height: 100%;
+    background: var(--black);
+}
+.section1 .slick-controls .slick-counter {
+    font-size: 2.4rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7.8rem;
+    margin-right: 6rem;
+}
+.section1 .slick-controls .slick-counter i {
+    display: inline-block;
+    width: 1px;
+    height: 1.2rem;
+    background: var(--txt3);
+    transform: rotate(45deg);
+    margin: 0 1rem;
+}
+.section1 .slick-controls .control {
+    font-size: 3rem;
+}
+.section1 .bg_typo {
+    background: url(https://munjang.or.kr/main/img/main/section2_typo.png) 0 0
+        repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 16.1rem;
+    animation: marquee 12s linear infinite;
+}
+.section1 .line {
+    opacity: 0.7;
+}
